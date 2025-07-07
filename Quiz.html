@@ -4,7 +4,27 @@
 	    <meta charset="UTF-8">
 	    <title>Quiz</title>
 	</head>
-	<body>
-		<script src="Quiz.js"></script>
-	</body>
+<body>
+    <p>システム開発の早い段階で、目に見える形で利用者の要求が確認できるように確認用のソフトウェアを作成するソフトウェア開発モデルとして、最も適切なものはどれか。</p>
+
+    <form id="quizForm">
+        <input type="radio" id="option1" name="answer" value="アジャイル">
+        <label for="option1">アジャイル</label><br>
+
+        <input type="radio" id="option2" name="answer" value="ウォーターフォール">
+        <label for="option2">ウォーターフォール</label><br>
+
+        <input type="radio" id="option3" name="answer" value="スパイラル">
+        <label for="option3">スパイラル</label><br>
+
+        <input type="radio" id="option4" name="answer" value="プロトタイピング">
+        <label for="option4">プロトタイピング</label><br><br>
+
+        <button type="button" onclick="checkAnswer()">解答する</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="Quiz.js"></script>
+</body>
 </html>
